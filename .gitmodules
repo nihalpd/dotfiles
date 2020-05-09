@@ -1,12 +1,12 @@
-[submodule "vim/pack/default/start/vim-airline"]
-	path = vim/pack/default/start/vim-airline
-	url = https://github.com/vim-airline/vim-airline.git
-[submodule "vim/pack/default/start/gruvbox"]
-	path = vim/pack/default/start/gruvbox
-	url = git@github.com:morhetz/gruvbox.git
-[submodule "vim/pack/default/start/vim-ale"]
-	path = vim/pack/default/start/vim-ale
+[submodule ".vim/pack/default/start/vim-ale"]
+	path = .vim/pack/default/start/vim-ale
 	url = git@github.com:dense-analysis/ale.git
-[submodule "vim/pack/default/start/vim-fugitive"]
-	path = vim/pack/default/start/vim-fugitive
+[submodule ".vim/pack/default/start/vim-fugitive"]
+	path = .vim/pack/default/start/vim-fugitive
 	url = git@github.com:tpope/vim-fugitive.git
+[submodule ".vim/pack/default/start/vim-airline"]
+	path = .vim/pack/default/start/vim-airline
+	url = https://github.com/vim-airline/vim-airline.git
+[submodule ".vim/pack/default/start/gruvbox"]
+	path = .vim/pack/default/start/gruvbox
+	url = git@github.com:morhetz/gruvbox.git
