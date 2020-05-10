@@ -13,3 +13,9 @@
 [submodule ".fzf"]
 	path = .fzf
 	url = https://github.com/junegunn/fzf.git
+[submodule ".vim/pack/default/opt/vim-goyo"]
+	path = .vim/pack/default/opt/vim-goyo
+	url = git@github.com:junegunn/goyo.vim.git
+[submodule ".vim/pack/default/opt/vim-limelight"]
+	path = .vim/pack/default/opt/vim-limelight
+	url = git@github.com:junegunn/limelight.vim.git
