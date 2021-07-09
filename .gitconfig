@@ -1,0 +1,5 @@
+[user]
+	name = Nihal Dayal
+[alias]
+        ci = commit
+	co = checkout
