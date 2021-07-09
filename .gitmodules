@@ -5,10 +5,16 @@
 [submodule ".vim/pack/default/start/vim-colorschemes"]
 	path = .vim/pack/default/start/vim-colorschemes
 	url = https://github.com/flazz/vim-colorschemes.git
-  shallow = true
+        shallow = true
 [submodule ".vim/pack/default/start/vim-fugitive"]
 	path = .vim/pack/default/start/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
+        shallow = true
 [submodule ".vim/pack/default/start/vim-go"]
 	path = .vim/pack/default/start/vim-go
 	url = https://github.com/fatih/vim-go.git
+        shallow = true
+[submodule ".vim/pack/default/start/vim-hcl"]
+	path = .vim/pack/default/start/vim-hcl
+	url = https://github.com/jvirtanen/vim-hcl.git
+        shallow = true
