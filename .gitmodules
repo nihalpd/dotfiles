@@ -2,3 +2,7 @@
 	path = .vim/pack/default/start/ale
 	url = https://github.com/dense-analysis/ale.git
 	shallow = true
+[submodule ".vim/pack/default/start/vim-colorschemes"]
+	path = .vim/pack/default/start/vim-colorschemes
+	url = https://github.com/flazz/vim-colorschemes.git
+  shallow = true
