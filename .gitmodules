@@ -6,3 +6,6 @@
 	path = .vim/pack/default/start/vim-colorschemes
 	url = https://github.com/flazz/vim-colorschemes.git
   shallow = true
+[submodule ".vim/pack/default/start/vim-fugitive"]
+	path = .vim/pack/default/start/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive.git
