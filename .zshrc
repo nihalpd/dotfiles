@@ -7,7 +7,7 @@ setopt share_history # share history between different instances of the shell
 setopt auto_list # automatically list choices on ambiguous completion
 setopt auto_menu # automatically use menu completion
 setopt always_to_end # move cursor to end if word had one match
-
+setopt ignore_eof # Stop quitting when I accidentally press ctrl-d
 
 # The following lines were added by compinstall
 zstyle ':completion:*' completer _complete _ignored _approximate
