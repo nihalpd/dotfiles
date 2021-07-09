@@ -1,0 +1,4 @@
+[submodule ".vim/pack/default/start/ale"]
+	path = .vim/pack/default/start/ale
+	url = https://github.com/dense-analysis/ale.git
+	shallow = true
