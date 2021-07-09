@@ -131,7 +131,7 @@ noremap <Right> <NOP>
 
 set rtp+=/usr/local/opt/fzf
 
-colorscheme transparent
+colorscheme jellybeans
 
 " Set bg transparent
 hi Normal guibg=NONE ctermbg=NONE
