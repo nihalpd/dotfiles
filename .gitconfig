@@ -5,3 +5,4 @@
 	co = checkout
 	st = status
 	dc = diff --cached
+	d = diff

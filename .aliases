@@ -1,0 +1,7 @@
+alias cfg='git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias gst="git status"
+alias aliases="$EDITOR $HOME/.aliases && source $HOME/.zshrc"
+alias vimrc="$EDITOR $HOME/.vimrc"
+alias zshrc="$EDITOR $HOME/.zshrc && source $HOME/.zshrc"
+alias ...="cd ../.."
+alias tf="terraform"
