@@ -1,5 +1,6 @@
 alias cfg='git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias gst="git status"
+alias gstl="git status ."
 alias aliases="$EDITOR $HOME/.aliases && source $HOME/.zshrc"
 alias vimrc="$EDITOR $HOME/.vimrc"
 alias vimpack="cd $HOME/.vim/pack/default/start"
