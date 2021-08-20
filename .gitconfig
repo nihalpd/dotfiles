@@ -6,3 +6,4 @@
 	st = status
 	dc = diff --cached
 	d = diff
+	br = branch
