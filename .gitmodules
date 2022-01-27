@@ -9,6 +9,3 @@
 [submodule "/Users/nihaldayal/.vim/pack/default/start/vim-terraform"]
 	path = /Users/nihaldayal/.vim/pack/default/start/vim-terraform
 	url = https://github.com/hashivim/vim-terraform.git
-[submodule "/Users/nihaldayal/.vim/pack/default/start/coc.nvim"]
-	path = /Users/nihaldayal/.vim/pack/default/start/coc.nvim
-	url = https://github.com/neoclide/coc.nvim.git
