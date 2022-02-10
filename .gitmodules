@@ -9,6 +9,3 @@
 [submodule "/Users/nihaldayal/.vim/pack/default/start/vim-terraform"]
 	path = /Users/nihaldayal/.vim/pack/default/start/vim-terraform
 	url = https://github.com/hashivim/vim-terraform.git
-[submodule ".vim/pack/default/start/ultisnips"]
-	path = .vim/pack/default/start/ultisnips
-	url = git@github.com:SirVer/ultisnips.git
