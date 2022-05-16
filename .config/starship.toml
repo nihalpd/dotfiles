@@ -1,3 +1,4 @@
+format="$all$time"
 command_timeout = 3000
 
 [golang]

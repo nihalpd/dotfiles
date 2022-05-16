@@ -91,22 +91,6 @@ set notimeout ttimeout ttimeoutlen=200
 " Use <F11> to toggle between 'paste' and 'nopaste'
 set pastetoggle=<F11>
 
-"------------------------------------------------------------
-" Indentation options {{{1
-"
-" Indentation settings according to personal preference.
-
-" Indentation settings for using 2 spaces instead of tabs.
-" Do not change 'tabstop' from its default value of 8 with this setup.
-set shiftwidth=2
-set softtabstop=2
-set expandtab
-
-" Indentation settings for using hard tabs for indent. Display tabs as
-" two characters wide.
-"set shiftwidth=2
-"set tabstop=2
-
 
 "------------------------------------------------------------
 " Mappings {{{1
@@ -139,7 +123,7 @@ hi EndOfBuffer ctermbg=NONE
 hi LineNr ctermbg=NONE
 
 " Combine the sign column into the number column
-set signcolumn=number
+" set signcolumn=number
 
 " Enable airline-tabline
 let g:airline#extensions#tabline#enabled = 1
@@ -151,6 +135,7 @@ set nomodeline
 
 " vim-go stuff
 let g:go_auto_type_info=1
+" Use gofumpt
 let g:go_fmt_command="gopls"
 let g:go_gopls_gofumpt=1
 
