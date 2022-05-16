@@ -9,3 +9,6 @@
 [submodule "/Users/nihaldayal/.vim/pack/default/start/vim-terraform"]
 	path = /Users/nihaldayal/.vim/pack/default/start/vim-terraform
 	url = https://github.com/hashivim/vim-terraform.git
+[submodule "/home/nihal/.vim/pack/default/opt/goyo"]
+	path = /home/nihal/.vim/pack/default/opt/goyo
+	url = https://github.com/junegunn/goyo.vim.git
