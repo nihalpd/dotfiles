@@ -113,6 +113,17 @@ noremap <Right> <NOP>
 
 "------------------------------------------------------------
 
+call plug#begin()
+Plug 'junegunn/fzf.vim'
+Plug 'tpope/vim-fugitive'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'vim-airline/vim-airline'
+Plug 'prettier/vim-prettier', {
+   \ 'do': 'yarn install --frozen-lockfile --production',
+   \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json',
+   \ 'graphql', 'markdown', 'vue', 'svelte', 'yaml', 'html'] }
+call plug#end()
+
 set rtp+=/usr/local/opt/fzf
 
 colorscheme jellybeans
