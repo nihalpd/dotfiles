@@ -23,6 +23,8 @@ export EDITOR=vim
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 export PATH=/usr/local/bin/vim:$PATH
+export PATH="$PATH:/usr/local/opt/ansible@2.9/bin"
+export PATH="/usr/local/opt/python3/libexec/bin:$PATH"
 
 # Source in extra config
 [ -f $HOME/.aliases ] && source $HOME/.aliases 
@@ -31,3 +33,5 @@ export PATH=/usr/local/bin/vim:$PATH
 
 # Run Starship
 eval "$(starship init zsh)"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
