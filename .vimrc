@@ -121,10 +121,12 @@ Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'vim-airline/vim-airline'
-Plug 'prettier/vim-prettier', {
-   \ 'do': 'yarn install --frozen-lockfile --production',
-   \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json',
-   \ 'graphql', 'markdown', 'vue', 'svelte', 'yaml', 'html'] }
+Plug 'jvirtanen/vim-hcl'
+Plug 'buoto/gotests-vim'
+Plug 'SirVer/ultisnips'
+Plug 'hashivim/vim-terraform'
+Plug 'github/copilot.vim'
+
 call plug#end()
 
 set rtp+=/usr/local/opt/fzf
@@ -148,10 +150,18 @@ let g:airline#extensions#tabline#buffer_nr_show = 1
 set nomodeline
 
 " vim-go stuff
+let g:go_gopls_options = ['-remote=auto'] " run in daemon mode
+let g:go_def_mode='gopls'
+let g:go_info_mode='gopls'
 let g:go_auto_type_info=1
-" Use gofumpt
-let g:go_fmt_command="gopls"
 let g:go_gopls_gofumpt=1
+let g:go_metalinter_enabled=1
+let g:go_metalinter_command='golangci-lint'
+""
+
+" gotests-vim
+let g:gotests_bin = '/Users/nihaldayal/go/bin/gotests'
+
 
 " vim-terraform stuff
 let g:terraform_fmt_on_save=1

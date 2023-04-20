@@ -27,11 +27,14 @@ export PATH="$PATH:/usr/local/opt/ansible@2.9/bin"
 export PATH="/usr/local/opt/python3/libexec/bin:$PATH"
 
 # Source in extra config
-[ -f $HOME/.aliases ] && source $HOME/.aliases 
+[ -f $HOME/.aliases ] && source $HOME/.aliases
 [ -f $HOME/.workrc ] && source $HOME/.workrc
 [ -f $HOME/.fzf.zsh ] && source $HOME/.fzf.zsh
 
 # Run Starship
 eval "$(starship init zsh)"
 
+# FZF config
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export FZF_DEFAULT_COMMAND='rg --files --follow --no-ignore-vcs --hidden -g "!{node_modules/*,.git/*}"'
+
