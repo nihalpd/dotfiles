@@ -19,7 +19,7 @@ compinit
 
 
 # Variables
-export EDITOR=vim
+export EDITOR=nvim
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 export PATH=/usr/local/bin/vim:$PATH
@@ -37,4 +37,3 @@ eval "$(starship init zsh)"
 # FZF config
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_COMMAND='rg --files --follow --no-ignore-vcs --hidden -g "!{node_modules/*,.git/*}"'
-
