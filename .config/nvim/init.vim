@@ -119,28 +119,24 @@ noremap <Right> <NOP>
 call plug#begin()
 Plug 'nvim-treesitter/nvim-treesitter'
 Plug 'neovim/nvim-lspconfig'
+Plug 'ray-x/guihua.lua', {'do': 'cd lua/fzy && make' }
+Plug 'ray-x/navigator.lua'
 Plug 'ray-x/go.nvim'
-Plug 'ray-x/guihua.lua'
+Plug 'ray-x/lsp_signature.nvim'
 Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline'
 Plug 'hashivim/vim-terraform'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
+Plug 'github/copilot.vim'
+Plug 'xiyaowong/transparent.nvim'
 call plug#end()
 
 set rtp+=/usr/local/opt/fzf
 
 colorscheme catppuccin
 
-
-" Set bg transparent
-hi Normal guibg=NONE ctermbg=NONE
-hi EndOfBuffer ctermbg=NONE
-hi LineNr ctermbg=NONE
-
-" Combine the sign column into the number column
-" set signcolumn=number
 
 " Enable airline-tabline
 let g:airline#extensions#tabline#enabled = 1
@@ -150,8 +146,12 @@ let g:airline#extensions#tabline#buffer_nr_show = 1
 " Disable modeline
 set nomodeline
 
-" go.nvim
-lua require('go').setup()
+" No need for require('lspconfig'), navigator will configure it for you
+lua <<EOF
+require('go').setup()
+require('lsp_signature').setup()
+require'navigator'.setup()
+EOF
 
 autocmd BufWritePre *.tfvars lua vim.lsp.buf.format()
 autocmd BufWritePre *.tf lua vim.lsp.buf.format()
