@@ -7,3 +7,5 @@
 	dc = diff --cached
 	d = diff
 	br = branch
+[push]
+	autoSetupRemote = true
