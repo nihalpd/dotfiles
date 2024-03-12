@@ -1,7 +1,3 @@
-TERM = "alacritty"
-dynamic_title = true
-hide_when_typing = true
-
 [font]
 size = 22.0
 
