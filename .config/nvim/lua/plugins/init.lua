@@ -1,7 +1,13 @@
 return {
 	  "hashivim/vim-terraform",
 	  "folke/which-key.nvim",
+	{
 		"lewis6991/gitsigns.nvim",
+	    event = { "BufReadPre", "BufNewFile" },
+    config = function()
+      require("gitsigns").setup()
+    end,
+  },
     "nvim-tree/nvim-web-devicons",
 	{
 		"xiyaowong/transparent.nvim",
@@ -25,7 +31,7 @@ return {
 	{
     "nvim-treesitter/nvim-treesitter",
     build = ":TSUpdate",
-    config = function () 
+    config = function ()
       local configs = require("nvim-treesitter.configs")
 
       configs.setup({
@@ -42,7 +48,7 @@ return {
 					},
           sync_install = false,
           highlight = { enable = true },
-          indent = { enable = true },  
+          indent = { enable = true },
         })
     end
  },
