@@ -31,9 +31,17 @@ export PATH="/usr/local/opt/python3/libexec/bin:$PATH"
 [ -f $HOME/.workrc ] && source $HOME/.workrc
 [ -f $HOME/.fzf.zsh ] && source $HOME/.fzf.zsh
 
-# Run Starship
-eval "$(starship init zsh)"
 
 # FZF config
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-export FZF_DEFAULT_COMMAND='rg --files --follow --no-ignore-vcs --hidden -g "!{node_modules/*,.git/*}"'
+export FZF_DEFAULT_COMMAND='rg --files --follow --no-ignore-vcs --hidden -g "!{node_modules/*,.git/*,*.terraform/*}"'
+
+# Run Starship
+eval "$(starship init zsh)"
+export PATH="$PATH:/Users/nihaldayal/Library/Application Support/Coursier/bin"
+
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
+
+ 
+eval "$(zoxide init zsh)"

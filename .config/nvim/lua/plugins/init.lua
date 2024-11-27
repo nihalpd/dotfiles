@@ -1,6 +1,19 @@
 return {
 	  "hashivim/vim-terraform",
-	  "folke/which-key.nvim",
+	{
+  "folke/which-key.nvim",
+  event = "VeryLazy",
+  init = function()
+    vim.o.timeout = true
+    vim.o.timeoutlen = 300
+  end,
+  opts = {
+    -- your configuration comes here
+    -- or leave it empty to use the default settings
+    -- refer to the configuration section below
+  }
+},
+	"tpope/vim-fugitive",
 	{
 		"lewis6991/gitsigns.nvim",
 	    event = { "BufReadPre", "BufNewFile" },
@@ -85,6 +98,39 @@ return {
 			{ "<c-l>", "<cmd><C-U>TmuxNavigateRight<cr>" },
 			{ "<c-\\>", "<cmd><C-U>TmuxNavigatePrevious<cr>" },
 		},
-	}
-
+	},
+	{
+  "ray-x/go.nvim",
+  dependencies = {  -- optional packages
+    "ray-x/guihua.lua",
+    "neovim/nvim-lspconfig",
+    "nvim-treesitter/nvim-treesitter",
+  },
+  config = function()
+    require("go").setup()
+  end,
+  event = {"CmdlineEnter"},
+  ft = {"go", 'gomod'},
+  build = ':lua require("go.install").update_all_sync()' -- if you need to install/update all binaries
+},
+{
+  "yanskun/gotests.nvim",
+  ft = "go",
+  config = function()
+    require("gotests").setup()
+  end,
+},
+{
+  "zbirenbaum/copilot.lua",
+  cmd = "Copilot",
+  build = ":Copilot auth",
+	event = "InsertEnter",
+	opts = {},
+},
+	  {
+      "zbirenbaum/copilot-cmp",
+      config = function()
+          require("copilot_cmp").setup()
+      end,
+  },
 	}

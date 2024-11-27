@@ -1,13 +1,15 @@
 local opt = vim.opt
 local g = vim.g
 
+-- map leader key to space
+g.mapleader = " "
+
 -- switch buffers without having to save
 opt.hidden = true
 
 -- use case insensitive search, except when using capital letters
 opt.ignorecase = true
 opt.smartcase = true
-
 
 -- display line numbers on the left
 opt.number = true
